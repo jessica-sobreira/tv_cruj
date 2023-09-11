@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.text-stroke {
+    -webkit-text-stroke: 2px white;
+    text-stroke: 2px white;
+    color: white;
+}
+
+.text-stroked {
+    -webkit-text-stroke: 0.5px white;
+    text-stroke: 0.5px white;
+}
+
+
+#banner {
+    position: relative;
+    background: url(./disney-banner.png) center top/cover no-repeat fixed;
+}
+
+#banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+
+}
+
+.banner-content {
+    position: relative;
+    z-index: 2;
+}
+
+
+main,
+footer {
+    background-color: black;
+}
+
+.accordion-button::after {
+    background-image: url(./add.svg) !important;
+}
+
+.btn-netflix {
+    background-color: #e50914;
+    color: #ffffff;
+    padding: 20px 35px;
+    font-weight: 700;
+    font-size: 25px;
+
+}
+
+.btn-netflix:hover {
+    background-color: darkred;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+hr {
+    height: 4px;
+    border: none;
+    background-color: grey;
+}
